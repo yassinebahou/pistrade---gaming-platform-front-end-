@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pistrade Clone</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@400;600;700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              theme: {
+                bg: '#0a0a12',      /* Very dark background */
+                card: '#12121a',    /* Slightly lighter for cards */
+                purple: '#7c3aed',  /* Primary Purple */
+                accent: '#a78bfa',  /* Lighter Purple */
+                text: '#e2e8f0',    /* Off-white text */
+                muted: '#94a3b8',   /* Muted text */
+              }
+            },
+            fontFamily: {
+              display: ['Fredoka', 'sans-serif'],
+              body: ['Nunito', 'sans-serif'],
+              script: ['Dancing Script', 'cursive'],
+            },
+            boxShadow: {
+              'glow': '0 0 20px rgba(124, 58, 237, 0.5)',
+              'card': '0 10px 30px -10px rgba(0, 0, 0, 0.5)',
+            },
+            backgroundImage: {
+              'purple-gradient': 'radial-gradient(circle at top left, rgba(124, 58, 237, 0.15), transparent 40%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0a0a12;
+        color: white;
+      }
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0a0a12;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7c3aed;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
