@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row items-center gap-6 justify-center lg:justify-start pt-4">
             <Button size="lg" className="px-10 py-4 !rounded-2xl shadow-[0_0_25px_rgba(124,58,237,0.4)]">
-              Visit Market >
+              Visit Market 
             </Button>
             <Button variant="ghost" className="text-gray-400 font-semibold hover:text-white">
               Learn more
